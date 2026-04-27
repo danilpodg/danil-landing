@@ -168,7 +168,7 @@ function LandingPreview({ project }) {
 
 export default function LandingCreatorPage() {
   return (
-    <main className="min-h-screen bg-neutral-950 text-white">
+    <main className="min-h-dvh overflow-x-hidden bg-neutral-950 text-white">
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-950/80 via-neutral-950 to-fuchsia-950/60" />
         <div className="absolute -right-24 -top-24 h-80 w-80 rounded-full bg-purple-500/25 blur-3xl" />
@@ -341,7 +341,10 @@ export default function LandingCreatorPage() {
           </form>
         </div>
       </section>
+
+      <footer className="bg-neutral-950 px-6 py-6 text-center text-sm text-neutral-500">
+        © 2026 Danil Podg. Создание лендинговых страниц.
+      </footer>
     </main>
   );
 }
-
