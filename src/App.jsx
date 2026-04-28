@@ -168,7 +168,31 @@ function LandingPreview({ project }) {
 
 export default function LandingCreatorPage() {
   return (
-    <main className="min-h-dvh overflow-x-hidden bg-neutral-950 text-white">
+    <>
+      <style>{`
+        html,
+        body,
+        #root {
+          min-height: 100%;
+          margin: 0;
+          background: #0a0a0a;
+        }
+
+        html {
+          background-color: #0a0a0a;
+        }
+
+        body {
+          background-color: #0a0a0a;
+          overscroll-behavior-y: none;
+          -webkit-overflow-scrolling: touch;
+        }
+
+        #root {
+          overflow-x: hidden;
+        }
+      `}</style>
+      <main className="min-h-dvh overflow-x-hidden bg-neutral-950 text-white">
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-950/80 via-neutral-950 to-fuchsia-950/60" />
         <div className="absolute -right-24 -top-24 h-80 w-80 rounded-full bg-purple-500/25 blur-3xl" />
@@ -315,10 +339,10 @@ export default function LandingCreatorPage() {
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.3em] text-purple-600">Контакты</p>
             <h2 className="mt-4 text-4xl font-black md:text-5xl">Обсудим ваш лендинг?</h2>
-            <p className="mt-5 max-w-lg text-neutral-600">Напишите мне, если нужен одностраничный сайт для услуги, портфолио, бизнеса или тестовой идеи. Работаю удалённо по всей России.</p>
+            <p className="mt-5 max-w-lg text-neutral-600">Напишите мне, если нужен одностраничный сайт для услуги, портфолио, бизнеса или тестовой идеи.</p>
 
             <div className="mt-8 space-y-4 text-neutral-700">
-              <p className="flex items-center gap-3"><span aria-hidden="true">☎️</span> <a href="tel:+79188068090" className="hover:text-purple-600">+7 918 806-80-90</a></p>
+              <p className="flex items-center gap-3"><span aria-hidden="true">☎️</span> <a href="tel:+79188068090" className="hover:text-purple-600">+7 995 320 69 75</a></p>
               <p className="flex items-center gap-3"><span aria-hidden="true">✉️</span> <a href="mailto:danilpodgayniy@gmail.com" className="hover:text-purple-600">danilpodgayniy@gmail.com</a></p>
               <p className="flex items-center gap-3"><span aria-hidden="true">📍</span> Удалённо по всей России</p>
             </div>
@@ -345,6 +369,7 @@ export default function LandingCreatorPage() {
       <footer className="bg-neutral-950 px-6 py-6 text-center text-sm text-neutral-500">
         © 2026 Danil Podg. Создание лендинговых страниц.
       </footer>
-    </main>
+      </main>
+    </>
   );
 }
