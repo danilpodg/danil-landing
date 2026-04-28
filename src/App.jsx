@@ -341,7 +341,7 @@ export default function PremiumLandingPage() {
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.3em] text-violet-600">Контакты</p>
               <h2 className="mt-4 text-4xl font-black md:text-5xl">Обсудим ваш лендинг?</h2>
-              <p className="mt-5 max-w-lg text-slate-600">Напишите мне, если нужен одностраничный сайт для услуги, портфолио, бизнеса или тестовой идеи. Работаю удалённо по всей России.</p>
+              <p className="mt-5 max-w-lg text-slate-600">Напишите мне, если нужен одностраничный сайт для услуги, портфолио, бизнеса или тестовой идеи.</p>
 
               <div className="mt-8 space-y-4 text-slate-700">
                 <p className="flex items-center gap-3"><span aria-hidden="true">☎️</span> <a href="tel:+79953206975" className="transition hover:text-violet-600">+7 995 320 69 75</a></p>
