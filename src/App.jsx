@@ -64,13 +64,14 @@ const projects = [
 const benefits = [
   "Делаю понятную структуру без лишней перегрузки",
   "Адаптирую страницу под телефоны и компьютеры",
+  "Работаю удалённо по всей России",
 ];
 
 function runLandingDataTests() {
   console.assert(services.length === 3, "Должно быть 3 услуги");
   console.assert(processSteps.length === 4, "Должно быть 4 этапа работы");
   console.assert(projects.length === 3, "Должно быть 3 примера формата");
-  console.assert(benefits.length === 2, "Должно быть 2 преимущества");
+  console.assert(benefits.length === 3, "Должно быть 3 преимущества");
   console.assert(
     services.every((service) => service.title && service.text && service.icon),
     "У каждой услуги должны быть icon, title и text"
@@ -368,7 +369,7 @@ export default function PremiumLandingPage() {
         </section>
 
         <footer className="bg-white px-6 py-6 text-center text-sm text-slate-500">
-          © 2026 Danil Podg Studio. Создание лендинговых страниц.
+          © 2026 Danil Podg. Создание лендинговых страниц.
         </footer>
       </main>
     </>
